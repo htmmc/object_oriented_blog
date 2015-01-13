@@ -25,3 +25,18 @@ end
 
 blog = Blog.new
 blog.front_page 
+
+class Post 
+	def Initialize(title, date, text)
+		@title = title
+		@date = date
+	end 
+	#def set_date
+	
+	#	date = Time.now()
+	#end
+
+	def post_output
+		puts "#{title} \n**************\n#{text}\n----------------" 
+	end 
+end 
