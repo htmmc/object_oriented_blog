@@ -33,6 +33,7 @@ class Post
 		@title = title
 		@text = text 
 		@date = Time.now()
+		@date = "#{@date.month}/#{@date.day}/#{@date.year}"
 	end 
 
 	def post
