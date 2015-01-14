@@ -32,8 +32,7 @@ class Post
 	def initialize (title, text)
 		@title = title
 		@text = text 
-		@date = Time.now()
-		@date = "#{@date.month}/#{@date.day}/#{@date.year}"
+		@date = Time.now.strftime("%m/%d/%y")
 	end 
 
 	def post
